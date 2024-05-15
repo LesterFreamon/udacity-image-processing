@@ -163,3 +163,4 @@ cython_debug/
 # model data
 intro-to-computer-vision/P1_Facial_Keypoints-master/data/test/*
 intro-to-computer-vision/P1_Facial_Keypoints-master/data/training/*
+advanced_computer_vision/2_4_LSTMs/rnn_1_epoch.net
