@@ -161,6 +161,7 @@ cython_debug/
 .DS_Store
 
 # model data
-intro-to-computer-vision/P1_Facial_Keypoints-master/data/test/*
-intro-to-computer-vision/P1_Facial_Keypoints-master/data/training/*
+intro-to-computer-vision/P1_Facial_Keypoints-master/data/test/
+intro-to-computer-vision/P1_Facial_Keypoints-master/data/training/
 advanced_computer_vision/2_4_LSTMs/rnn_1_epoch.net
+intro-to-computer-vision/1_1_Image_Representation/day_night_images/
