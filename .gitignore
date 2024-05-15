@@ -159,3 +159,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 .DS_Store
+
+# model data
+intro-to-computer-vision/P1_Facial_Keypoints-master/data/test/*
+intro-to-computer-vision/P1_Facial_Keypoints-master/data/training/*
