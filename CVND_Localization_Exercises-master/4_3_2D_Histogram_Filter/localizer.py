@@ -20,6 +20,16 @@ def sense(color, grid, beliefs, p_hit, p_miss):
     #
     # TODO - implement this in part 2
     #
+    for i, row in enumerate(grid):
+        new_row = []
+        for j, cell in enumerate(row):
+            hit = (color == cell)
+            new_row.append(beliefs[i][j] * (hit * p_hit + (1-hit) * p_miss))
+        new_beliefs.append(new_row)
+    s = sum([sum(row) for row in new_beliefs])
+    for i, row in enumerate(new_beliefs):
+        for j, cell in enumerate(row):
+            new_beliefs[i][j] = cell / s
 
     return new_beliefs
 
@@ -29,8 +39,8 @@ def move(dy, dx, beliefs, blurring):
     new_G = [[0.0 for i in range(width)] for j in range(height)]
     for i, row in enumerate(beliefs):
         for j, cell in enumerate(row):
-            new_i = (i + dy ) % width
-            new_j = (j + dx ) % height
+            new_i = (i + dy ) % height
+            new_j = (j + dx ) % width
             # pdb.set_trace()
             new_G[int(new_i)][int(new_j)] = cell
     return blur(new_G, blurring)
